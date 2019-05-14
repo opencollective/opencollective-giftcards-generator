@@ -49,6 +49,7 @@
     "build:next": "next build dist",
     "test": "TZ=UTC jest",
     "test:update": "TZ=UTC jest -u",
+    "test:watch": "TZ=UTC jest --watch",
     "lint": "eslint \"src/**/*.js\" \"test/**/*.js\"",
     "lint:fix": "npm run lint -- --fix",
     "lint:quiet": "npm run lint -- --quiet",
