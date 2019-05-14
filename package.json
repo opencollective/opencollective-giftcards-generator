@@ -56,8 +56,7 @@
     "deploy:staging": "./scripts/pre-deploy.sh staging && now -e WEBSITE_URL=https://staging.opencollective.com && now alias giftcards-generator-staging.opencollective.com",
     "deploy:production": "./scripts/pre-deploy.sh production && now -e WEBSITE_URL=https://opencollective.com && now alias giftcards-generator.opencollective.com",
     "styleguide:dev": "styleguidist server",
-    "styleguide:build": "styleguidist build",
-    "styleguide:deploy": "npm run styleguide:build && echo NOT CONFIGURED YET"
+    "styleguide:build": "mkdir -p src/static && cp -r src/static styleguide/static/ && styleguidist build"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
