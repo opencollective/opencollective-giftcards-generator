@@ -25,7 +25,7 @@ module.exports = {
   styleguideComponents: {
     Wrapper: path.join(__dirname, 'styleguide/Wrapper'),
   },
-  title: 'Open Collective Frontend Style Guide',
+  title: 'Open Collective - Gift Cards Styleguide',
   usageMode: 'expand',
   webpackConfig: {
     resolve: { extensions: ['.js', '.json'] },
