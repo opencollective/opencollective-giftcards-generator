@@ -147,18 +147,26 @@ const PrintableGiftCard = ({ amount, currency, code, expiryDate, tagline, withQR
 };
 
 PrintableGiftCard.propTypes = {
+  /** The amount in cents */
   amount: PropTypes.number.isRequired,
+  /** Currency of the gift card (eg. `EUR`) */
   currency: PropTypes.string.isRequired,
+  /** The 8 characters code of the gift card */
   code: PropTypes.string.isRequired,
+  /** Expiry date */
   expiryDate: PropTypes.string,
+  /** Border radius for the card */
   borderRadius: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  tagline: PropTypes.node,
+  /** If true, QR code will be displayed */
   withQRCode: PropTypes.bool,
+  /** The tagline displayed under Open Collective logo */
+  tagline: PropTypes.node,
 };
 
 PrintableGiftCard.defaultProps = {
   tagline: 'Transparent funding for open source',
   withQRCode: true,
+  borderRadius: '0px',
 };
 
 export default PrintableGiftCard;
