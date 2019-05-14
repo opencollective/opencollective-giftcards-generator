@@ -1,0 +1,18 @@
+.next
+.env
+node_modules
+npm-debug.log.*
+*.log
+yarn.lock
+.DS_Store
+build
+cypress/screenshots
+*.swp
+dist
+coverage
+styleguide/build
+styleguide/index.html
+
+# VSCode
+.vscode/*
+.history
