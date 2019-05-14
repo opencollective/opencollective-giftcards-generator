@@ -298,6 +298,7 @@ exports[`renders correctly 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   font-size: 0.28in;
+  border-radius: 0px;
 }
 
 .c3 {

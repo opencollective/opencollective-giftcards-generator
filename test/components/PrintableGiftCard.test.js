@@ -7,7 +7,7 @@ import PrintableGiftCard from '../../src/components/PrintableGiftCard';
 it('renders correctly', () => {
   const tree = renderer
     .create(
-      <IntlProvider>
+      <IntlProvider locale="en">
         <PrintableGiftCard
           amount={50000}
           currency="USD"
