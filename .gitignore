@@ -11,6 +11,7 @@ cypress/screenshots
 dist
 coverage
 styleguide/build
+styleguide/static
 styleguide/index.html
 
 # VSCode
