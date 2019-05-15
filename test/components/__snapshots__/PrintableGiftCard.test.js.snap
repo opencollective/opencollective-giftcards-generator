@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   box-sizing: border-box;
 }
 
-.c23 {
+.c22 {
   box-sizing: border-box;
   margin-left: 0.25em;
 }
@@ -55,7 +55,7 @@ exports[`renders correctly 1`] = `
 
 .c8 {
   box-sizing: border-box;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
   -webkit-flex: 1 1;
   -ms-flex: 1 1;
   flex: 1 1;
@@ -85,7 +85,7 @@ exports[`renders correctly 1`] = `
   justify-content: space-between;
 }
 
-.c18 {
+.c17 {
   box-sizing: border-box;
   padding-right: 0.8em;
   display: -webkit-box;
@@ -105,7 +105,7 @@ exports[`renders correctly 1`] = `
   justify-content: flex-end;
 }
 
-.c19 {
+.c18 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -124,7 +124,7 @@ exports[`renders correctly 1`] = `
   justify-content: flex-end;
 }
 
-.c20 {
+.c19 {
   box-sizing: border-box;
   margin-top: 1em;
   margin-bottom: 0.1em;
@@ -134,7 +134,7 @@ exports[`renders correctly 1`] = `
   display: flex;
 }
 
-.c15 {
+.c14 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -148,7 +148,7 @@ exports[`renders correctly 1`] = `
   box-shadow: 2px 3px 5px rgba(0,0,0,0.15);
   color: #d7e8fe;
   font-weight: bold;
-  font-size: 0.75em;
+  font-size: 0.7em;
   padding: 0.25em 1em;
 }
 
@@ -175,7 +175,7 @@ exports[`renders correctly 1`] = `
 
 .c6 {
   color: white.transparent.72;
-  font-size: 0.75em;
+  font-size: 0.7em;
   line-height: 0.8em;
   -webkit-letter-spacing: -0.2px;
   -moz-letter-spacing: -0.2px;
@@ -185,17 +185,6 @@ exports[`renders correctly 1`] = `
 }
 
 .c12 {
-  color: black.100;
-  font-size: 0.6em;
-  line-height: 1.75em;
-  -webkit-letter-spacing: -0.2px;
-  -moz-letter-spacing: -0.2px;
-  -ms-letter-spacing: -0.2px;
-  letter-spacing: -0.2px;
-  margin: 0;
-}
-
-.c13 {
   color: black.300;
   font-size: 0.55em;
   line-height: 1.75em;
@@ -206,7 +195,7 @@ exports[`renders correctly 1`] = `
   margin: 0;
 }
 
-.c14 {
+.c13 {
   font-size: 0.8em;
   line-height: Paragraph;
   -webkit-letter-spacing: -0.2px;
@@ -214,11 +203,9 @@ exports[`renders correctly 1`] = `
   -ms-letter-spacing: -0.2px;
   letter-spacing: -0.2px;
   margin: 0;
-  margin-top: 0.05in;
-  margin-bottom: 0.05in;
 }
 
-.c16 {
+.c15 {
   color: black.500;
   font-size: inherit;
   line-height: inherit;
@@ -230,7 +217,7 @@ exports[`renders correctly 1`] = `
   margin-left: 4px;
 }
 
-.c17 {
+.c16 {
   color: black.800;
   font-size: inherit;
   font-weight: bold;
@@ -242,7 +229,7 @@ exports[`renders correctly 1`] = `
   margin: 0;
 }
 
-.c21 {
+.c20 {
   color: #313233;
   font-size: 2em;
   font-weight: bold;
@@ -254,7 +241,7 @@ exports[`renders correctly 1`] = `
   margin: 0;
 }
 
-.c22 {
+.c21 {
   font-size: inherit;
   line-height: inherit;
   -webkit-letter-spacing: -0.2px;
@@ -264,7 +251,7 @@ exports[`renders correctly 1`] = `
   margin: 0;
 }
 
-.c24 {
+.c23 {
   color: black.700;
   font-size: 0.9em;
   line-height: inherit;
@@ -277,11 +264,12 @@ exports[`renders correctly 1`] = `
 
 .c0 {
   box-sizing: border-box;
-  width: 7in;
-  height: 4in;
+  font-size: 0.14in;
+  width: 3.5in;
+  height: 2in;
   position: relative;
   overflow: hidden;
-  background-image: url('/static/images/oc-gift-card-front-straightened.svg');
+  background-image: url('http://localhost:3004/static/images/oc-gift-card-front-straightened.svg');
   background-size: 100%;
   background-repeat: no-repeat;
   border: 1px solid lightgrey;
@@ -297,8 +285,8 @@ exports[`renders correctly 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  font-size: 0.28in;
   border-radius: 0px;
+  font-size: 0.14in;
 }
 
 .c3 {
@@ -308,9 +296,6 @@ exports[`renders correctly 1`] = `
 
 @media print {
   .c0 {
-    width: 3.5in;
-    height: 2in;
-    font-size: 0.14in;
     -webkit-break-inside: avoid;
     break-inside: avoid;
   }
@@ -318,6 +303,7 @@ exports[`renders correctly 1`] = `
 
 <div
   className="c0"
+  fontSize="0.14in"
   style={
     Object {
       "marginRight": 15,
@@ -333,7 +319,7 @@ exports[`renders correctly 1`] = `
       <img
         alt=""
         className="c3"
-        src="/static/images/opencollective-icon.svg"
+        src="http://localhost:3004/static/images/opencollective-icon.svg"
       />
       <div
         className="c4"
@@ -374,14 +360,6 @@ exports[`renders correctly 1`] = `
         <p
           className="c12"
         >
-          Contribute to the project of your choice at 
-          <strong>
-            opencollective.com
-          </strong>
-        </p>
-        <p
-          className="c13"
-        >
           <span>
             Expires on 
             <span>
@@ -391,11 +369,11 @@ exports[`renders correctly 1`] = `
         </p>
       </div>
       <p
-        className="c14"
+        className="c13"
       >
         <svg
           aria-hidden="true"
-          className="c15"
+          className="c14"
           color="black"
           fill="none"
           focusable="false"
@@ -420,41 +398,41 @@ exports[`renders correctly 1`] = `
           />
         </svg>
         <span
-          className="-Clean-span c16"
+          className="-Clean-span c15"
         >
-          opencollective.com
+          http://localhost:3000
           /redeem/
         </span>
         <span
-          className="-Clean-span c17"
+          className="-Clean-span c16"
         >
           8X4WWD2G
         </span>
       </p>
     </div>
     <div
-      className="c18"
+      className="c17"
     >
       <div
-        className="c19"
+        className="c18"
       >
         <div
-          className="c20"
+          className="c19"
         >
           <span
-            className="-Clean-span c21"
+            className="-Clean-span c20"
           >
             <span
-              className="-Clean-span c22"
+              className="-Clean-span c21"
             >
               $500
             </span>
           </span>
           <div
-            className="c23"
+            className="c22"
           >
             <span
-              className="currency -Clean-span c24"
+              className="currency -Clean-span c23"
             >
               USD
             </span>

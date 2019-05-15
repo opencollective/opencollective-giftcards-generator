@@ -41,6 +41,8 @@ npm run styleguide:dev
 npm run dev
 ```
 
+Open http://localhost:3004/ to access the test/dev page.
+
 ### Tests
 
 You can run the tests using `npm test`.

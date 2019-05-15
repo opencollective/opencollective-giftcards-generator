@@ -1,6 +1,7 @@
 import React from 'react';
 import App, { Container } from 'next/app';
 import { ThemeProvider } from 'styled-components';
+import { IntlProvider } from 'react-intl';
 
 import theme from '../constants/theme';
 
@@ -11,7 +12,9 @@ class OpenCollectiveFrontendApp extends App {
     return (
       <Container>
         <ThemeProvider theme={theme}>
-          <Component {...pageProps} />
+          <IntlProvider locale="en">
+            <Component {...pageProps} />
+          </IntlProvider>
         </ThemeProvider>
       </Container>
     );

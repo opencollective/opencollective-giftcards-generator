@@ -1,5 +1,3 @@
-import crypto from 'crypto';
-
 export const queryString = {
   stringify: obj => {
     let str = '';
@@ -22,9 +20,3 @@ export const queryString = {
     return res;
   },
 };
-
-export const md5 = string =>
-  crypto
-    .createHash('md5')
-    .update(string)
-    .digest('hex');

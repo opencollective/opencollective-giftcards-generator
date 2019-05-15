@@ -4,21 +4,23 @@ import { Flex, Box } from '@rebass/grid';
 import { FormattedMessage, FormattedDate } from 'react-intl';
 import QRCode from 'qrcode.react';
 import styled from 'styled-components';
-import { borderRadius } from 'styled-system';
+import { borderRadius, fontSize } from 'styled-system';
 
 import { ExternalLink } from 'styled-icons/feather/ExternalLink';
 
+import { imgUrl } from '../lib/utils';
+import { WEBSITE_URL } from '../constants/env';
 import Container from './Container';
 import StyledHr from './StyledHr';
 import { P, Span } from './Text';
 import Currency from './Currency';
 
 const Card = styled(Box)`
-  width: 7in;
-  height: 4in;
+  width: 3.5in;
+  height: 2in;
   position: relative;
   overflow: hidden;
-  background-image: url('/static/images/oc-gift-card-front-straightened.svg');
+  background-image: url('${imgUrl('oc-gift-card-front-straightened.svg')}');
   background-size: 100%;
   background-repeat: no-repeat;
   border: 1px solid lightgrey;
@@ -26,22 +28,16 @@ const Card = styled(Box)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 0.28in;
 
   @media print {
-    width: 3.5in;
-    height: 2in;
-    font-size: 0.14in;
     break-inside: avoid;
   }
 
   ${borderRadius};
+  ${fontSize};
 `;
 
-const OpenCollectiveLogo = styled.img.attrs({
-  src: '/static/images/opencollective-icon.svg',
-  alt: '',
-})`
+const OpenCollectiveLogo = styled.img`
   width: 3em;
   height: 3em;
 `;
@@ -51,9 +47,8 @@ const OpenCollectiveLogo = styled.img.attrs({
  * business card resolution (3.5in x 2in) but is rendered two time bigger for HDPI.
  */
 const PrintableGiftCard = ({ amount, currency, code, expiryDate, tagline, withQRCode, ...styleProps }) => {
-  const websiteUrl = process.env.WEBSITE_URL || 'https://opencollective.com';
-  const shortWebsiteUrl = websiteUrl.replace('https://', '');
-  const redeemUrl = `${websiteUrl}/redeem/${code}`;
+  const shortWebsiteUrl = WEBSITE_URL.replace('https://', '');
+  const redeemUrl = `${WEBSITE_URL}/redeem/${code}`;
   const basePaddingX = '0.8em';
   const paddingTop = '1em';
 
@@ -62,13 +57,13 @@ const PrintableGiftCard = ({ amount, currency, code, expiryDate, tagline, withQR
       {/** Header */}
       <Flex justifyContent="space-between" alignItems="center" px={basePaddingX} pt={paddingTop}>
         <Flex alignItems="center">
-          <OpenCollectiveLogo />
+          <OpenCollectiveLogo src={imgUrl('opencollective-icon.svg')} alt="" />
           <Flex flexDirection="column" ml="0.8em">
             <P fontWeight="bold" fontSize="1.1em" lineHeight="1.5em">
               Open Collective
             </P>
             {tagline && (
-              <P fontSize="0.75em" lineHeight="0.8em" color="white.transparent.72">
+              <P fontSize="0.7em" lineHeight="0.8em" color="white.transparent.72">
                 {tagline}
               </P>
             )}
@@ -82,21 +77,18 @@ const PrintableGiftCard = ({ amount, currency, code, expiryDate, tagline, withQR
           padding="0.25em 1em"
           boxShadow="2px 3px 5px rgba(0, 0, 0, 0.15)"
           fontWeight="bold"
-          fontSize="0.75em"
+          fontSize="0.7em"
         >
           <FormattedMessage id="GiftCard" defaultMessage="Gift card" />
         </Container>
       </Flex>
 
       {/** Content */}
-      <Flex justifyContent="space-between" flex="1 1" mb="0.5em">
+      <Flex justifyContent="space-between" flex="1 1" mb="0.3em">
         {/** Left */}
         <Flex flexDirection="column" justifyContent="space-between" ml={basePaddingX}>
           <Box>
             <StyledHr mt="0.75em" mb="0.5em" borderColor="rgb(62, 129, 230)" borderRadius={8} />
-            <P fontSize="0.6em" lineHeight="1.75em" color="black.100">
-              Contribute to the project of your choice at <strong>opencollective.com</strong>
-            </P>
             {expiryDate && (
               <P fontSize="0.55em" lineHeight="1.75em" color="black.300">
                 <FormattedMessage
@@ -109,7 +101,7 @@ const PrintableGiftCard = ({ amount, currency, code, expiryDate, tagline, withQR
               </P>
             )}
           </Box>
-          <P fontSize="0.8em" my="0.05in">
+          <P fontSize="0.8em">
             <ExternalLink size="1em" color="black" />
             <Span color="black.500" ml={1}>
               {shortWebsiteUrl}/redeem/
@@ -125,8 +117,14 @@ const PrintableGiftCard = ({ amount, currency, code, expiryDate, tagline, withQR
           <Flex flexDirection="column" justifyContent="flex-end" alignItems="flex-end">
             {withQRCode && (
               <Container height="4.5em" border="1px solid lightgrey" boxShadow="2px 5px 4px rgba(0,0,0,0.15)">
-                {/** Use 4x the real size to get a better resolution */}
-                <QRCode value={redeemUrl} size={512} fgColor="#313233" style={{ width: '4.5em', height: '4.5em' }} />
+                {/** Use 2x the real size to get a better resolution */}
+                <QRCode
+                  renderAs="svg"
+                  value={redeemUrl}
+                  size={256}
+                  fgColor="#313233"
+                  style={{ width: '4.5em', height: '4.5em' }}
+                />
               </Container>
             )}
             <Flex mt="1em" mb="0.1em">
@@ -161,12 +159,15 @@ PrintableGiftCard.propTypes = {
   withQRCode: PropTypes.bool,
   /** The tagline displayed under Open Collective logo */
   tagline: PropTypes.node,
+  /** Main font size */
+  fontSize: PropTypes.string,
 };
 
 PrintableGiftCard.defaultProps = {
   tagline: 'Transparent funding for open source',
   withQRCode: true,
   borderRadius: '0px',
+  fontSize: '0.14in',
 };
 
 export default PrintableGiftCard;
