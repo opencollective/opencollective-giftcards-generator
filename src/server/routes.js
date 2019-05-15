@@ -1,5 +1,5 @@
 import nextRoutes from 'next-routes';
-import controller from './controllers';
+import { renderMany, testFixture } from './controllers';
 import { maxAge } from './middlewares';
 
 const router = nextRoutes();
@@ -32,7 +32,9 @@ export default (server, app) => {
   /**
    * Endpoint to download a pdf
    */
-  server.post('/render-many/:filename.:format', bindApp, controller.renderMany);
+  server.post('/render-many/:filename.:format(pdf|html)', bindApp, renderMany);
+
+  server.get('/__test__/:filename.:format(pdf|html)', bindApp, testFixture);
 
   return router.getRequestHandler(server.next);
 };
