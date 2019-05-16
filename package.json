@@ -55,7 +55,7 @@
     "lint:fix": "npm run lint -- --fix",
     "lint:quiet": "npm run lint -- --quiet",
     "prettier": "prettier \"src/**/*.js\" \"test/**/*.js\" --write",
-    "deploy:staging": "./scripts/pre-deploy.sh staging && now -e GENERATOR_URL=https://staging-giftcards-generator.opencollective.com -e WEBSITE_URL=https://staging.opencollective.com && now alias giftcards-generator-staging.opencollective.com",
+    "deploy:staging": "./scripts/pre-deploy.sh staging && now -e GENERATOR_URL=https://giftcards-generator-staging.opencollective.com -e WEBSITE_URL=https://staging.opencollective.com && now alias giftcards-generator-staging.opencollective.com",
     "deploy:production": "./scripts/pre-deploy.sh production && now -e GENERATOR_URL=https://giftcards-generator.opencollective.com -e WEBSITE_URL=https://opencollective.com && now alias giftcards-generator.opencollective.com",
     "styleguide:dev": "styleguidist server",
     "styleguide:build": "mkdir -p src/static && cp -r src/static styleguide/static/ && STATIC_ASSETS_URL=/static styleguidist build"
