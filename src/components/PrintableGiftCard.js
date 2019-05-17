@@ -16,6 +16,7 @@ import { P, Span } from './Text';
 import Currency from './Currency';
 
 const Card = styled(Box)`
+  font-family: Helvetica, sans-serif;
   width: 3.5in;
   height: 2in;
   position: relative;
