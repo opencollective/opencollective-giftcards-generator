@@ -270,7 +270,7 @@ exports[`renders correctly 1`] = `
   height: 2in;
   position: relative;
   overflow: hidden;
-  background-image: url('http://localhost:3004/static/images/oc-gift-card-front-straightened.svg');
+  background-image: url('http://localhost:3004/static/images/oc-gift-card-front-straightened.png');
   background-size: 100%;
   background-repeat: no-repeat;
   border: 1px solid lightgrey;
@@ -401,8 +401,7 @@ exports[`renders correctly 1`] = `
         <span
           className="-Clean-span c15"
         >
-          http://localhost:3000
-          /redeem/
+          opencollective.com/redeem/
         </span>
         <span
           className="-Clean-span c16"
