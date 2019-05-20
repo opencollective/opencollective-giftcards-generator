@@ -18,9 +18,9 @@
     currency="USD"
     code="8X4WWD2G"
     expiryDate="Wed May 13 2020 00:00:00 GMT+0200 (GMT+02:00)"
-    withQRCode={false}
-    tagline="I have no QR code!"
     style={{ marginRight: 15 }}
+    tagline="I have a QR code!"
+    withQRCode
   />
   <br />
   <PrintableGiftCard

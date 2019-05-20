@@ -21,7 +21,7 @@ const Card = styled(Box)`
   height: 2in;
   position: relative;
   overflow: hidden;
-  background-image: url('${imgUrl('oc-gift-card-front-straightened.svg')}');
+  background-image: url('${imgUrl('oc-gift-card-front-straightened.png')}');
   background-size: 100%;
   background-repeat: no-repeat;
   border: 1px solid lightgrey;
@@ -105,7 +105,7 @@ const PrintableGiftCard = ({ amount, currency, code, expiryDate, tagline, withQR
           <P fontSize="0.8em">
             <ExternalLink size="1em" color="black" />
             <Span color="black.500" ml={1}>
-              {shortWebsiteUrl}/redeem/
+              opencollective.com/redeem/
             </Span>
             <Span fontWeight="bold" color="black.800">
               {code}
@@ -166,7 +166,7 @@ PrintableGiftCard.propTypes = {
 
 PrintableGiftCard.defaultProps = {
   tagline: 'Transparent funding for open source',
-  withQRCode: true,
+  withQRCode: false,
   borderRadius: '0px',
   fontSize: '0.14in',
 };
