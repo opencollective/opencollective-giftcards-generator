@@ -21,7 +21,7 @@ const Card = styled(Box)`
   height: 2in;
   position: relative;
   overflow: hidden;
-  background-image: url('${imgUrl('oc-gift-card-front-straightened.svg')}');
+  background-image: url('${imgUrl('oc-gift-card-front-straightened.png')}');
   background-size: 100%;
   background-repeat: no-repeat;
   border: 1px solid lightgrey;
