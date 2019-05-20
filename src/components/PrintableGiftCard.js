@@ -105,7 +105,7 @@ const PrintableGiftCard = ({ amount, currency, code, expiryDate, tagline, withQR
           <P fontSize="0.8em">
             <ExternalLink size="1em" color="black" />
             <Span color="black.500" ml={1}>
-              {shortWebsiteUrl}/redeem/
+              opencollective.com/redeem/
             </Span>
             <Span fontWeight="bold" color="black.800">
               {code}
