@@ -166,7 +166,7 @@ PrintableGiftCard.propTypes = {
 
 PrintableGiftCard.defaultProps = {
   tagline: 'Transparent funding for open source',
-  withQRCode: true,
+  withQRCode: false,
   borderRadius: '0px',
   fontSize: '0.14in',
 };
