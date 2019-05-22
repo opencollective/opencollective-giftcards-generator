@@ -7,7 +7,6 @@ import styled from 'styled-components';
 import { borderRadius, fontSize } from 'styled-system';
 
 import { ExternalLink } from 'styled-icons/feather/ExternalLink';
-
 import { imgUrl } from '../lib/utils';
 import { WEBSITE_URL } from '../constants/env';
 import Container from './Container';
@@ -17,18 +16,19 @@ import Currency from './Currency';
 
 const Card = styled(Box)`
   font-family: Helvetica, sans-serif;
-  width: 3.5in;
-  height: 2in;
+  width: 85.60mm;
+  height: 53.98mm;
   position: relative;
   overflow: hidden;
   background-image: url('${imgUrl('oc-gift-card-front-straightened.png')}');
   background-size: 100%;
   background-repeat: no-repeat;
-  border: 1px solid lightgrey;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  outline: 0.1em dashed rgba(62, 130, 230, 0.15);
+  margin: 2em;
 
   @media print {
     break-inside: avoid;
@@ -48,7 +48,6 @@ const OpenCollectiveLogo = styled.img`
  * business card resolution (3.5in x 2in) but is rendered two time bigger for HDPI.
  */
 const PrintableGiftCard = ({ amount, currency, code, expiryDate, tagline, withQRCode, ...styleProps }) => {
-  const shortWebsiteUrl = WEBSITE_URL.replace('https://', '');
   const redeemUrl = `${WEBSITE_URL}/redeem/${code}`;
   const basePaddingX = '0.8em';
   const paddingTop = '1em';
@@ -56,53 +55,55 @@ const PrintableGiftCard = ({ amount, currency, code, expiryDate, tagline, withQR
   return (
     <Card {...styleProps}>
       {/** Header */}
-      <Flex justifyContent="space-between" alignItems="center" px={basePaddingX} pt={paddingTop}>
-        <Flex alignItems="center">
-          <OpenCollectiveLogo src={imgUrl('opencollective-icon.svg')} alt="" />
-          <Flex flexDirection="column" ml="0.8em">
-            <P fontWeight="bold" fontSize="1.1em" lineHeight="1.5em">
-              Open Collective
-            </P>
-            {tagline && (
-              <P fontSize="0.7em" lineHeight="0.8em" color="white.transparent.72">
-                {tagline}
+      <Box px={basePaddingX} pt={paddingTop}>
+        <Flex justifyContent="space-between" alignItems="center">
+          <Flex alignItems="center">
+            <OpenCollectiveLogo src={imgUrl('opencollective-icon.svg')} alt="" />
+            <Flex flexDirection="column" ml="0.8em">
+              <P fontWeight="bold" fontSize="1.1em" lineHeight="1.5em">
+                Open Collective
               </P>
-            )}
+              {tagline && (
+                <P fontSize="0.7em" lineHeight="0.8em" color="white.transparent.72">
+                  {tagline}
+                </P>
+              )}
+            </Flex>
           </Flex>
+
+          <Container
+            background="#69a0f1"
+            color="#d7e8fe"
+            borderRadius="1em"
+            padding="0.25em 1em"
+            boxShadow="2px 3px 5px rgba(0, 0, 0, 0.15)"
+            fontWeight="bold"
+            fontSize="0.7em"
+          >
+            <FormattedMessage id="GiftCard" defaultMessage="Gift card" />
+          </Container>
         </Flex>
-
-        <Container
-          background="#69a0f1"
-          color="#d7e8fe"
-          borderRadius="1em"
-          padding="0.25em 1em"
-          boxShadow="2px 3px 5px rgba(0, 0, 0, 0.15)"
-          fontWeight="bold"
-          fontSize="0.7em"
-        >
-          <FormattedMessage id="GiftCard" defaultMessage="Gift card" />
-        </Container>
-      </Flex>
-
-      {/** Content */}
-      <Flex justifyContent="space-between" flex="1 1" mb="0.3em">
-        {/** Left */}
-        <Flex flexDirection="column" justifyContent="space-between" ml={basePaddingX}>
-          <Box>
-            <StyledHr mt="0.75em" mb="0.5em" borderColor="rgb(62, 129, 230)" borderRadius={8} />
+        <Box>
+          <StyledHr mt="0.75em" mb="0.5em" borderColor="rgb(73, 139, 237)" borderRadius={8} />
+          <P fontSize="0.55em" lineHeight="1.75em" color="black.300">
             {expiryDate && (
-              <P fontSize="0.55em" lineHeight="1.75em" color="black.300">
-                <FormattedMessage
-                  id="ContributePayment.expiresOn"
-                  defaultMessage="Expires on {expiryDate}"
-                  values={{
-                    expiryDate: <FormattedDate value={expiryDate} day="numeric" year="numeric" month="long" />,
-                  }}
-                />
-              </P>
+              <FormattedMessage
+                id="ContributePayment.expiresOn"
+                defaultMessage="Expires on {expiryDate}"
+                values={{
+                  expiryDate: <FormattedDate value={expiryDate} day="numeric" year="numeric" month="long" />,
+                }}
+              />
             )}
-          </Box>
-          <P fontSize="0.8em">
+          </P>
+        </Box>
+      </Box>
+
+      {/** Footer */}
+      <Flex justifyContent="space-between" alignItems="flex-end" flex="1 1" mb="0.6em">
+        {/** Left */}
+        <Flex flexDirection="column" justifyContent="space-between" ml={basePaddingX} mb="0.25em">
+          <P fontSize="0.75em">
             <ExternalLink size="1em" color="black" />
             <Span color="black.500" ml={1}>
               opencollective.com/redeem/
@@ -128,12 +129,12 @@ const PrintableGiftCard = ({ amount, currency, code, expiryDate, tagline, withQR
                 />
               </Container>
             )}
-            <Flex mt="1em" mb="0.1em">
-              <Span fontWeight="bold" fontSize="2em" lineHeight="1em" color="#313233">
+            <Flex mt="1em" mb="0.4em">
+              <Span fontWeight="bold" fontSize="1.9em" lineHeight="1em" color="#313233">
                 <Currency value={amount} currency={currency} precision={0} />
               </Span>
               <Box ml="0.25em">
-                <Span color="black.700" fontSize="0.9em" className="currency">
+                <Span color="black.700" fontSize="0.7em" className="currency">
                   {currency}
                 </Span>
               </Box>

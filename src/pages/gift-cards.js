@@ -42,16 +42,16 @@ export default class Home extends Component {
   render() {
     const { cards, format } = this.props;
     const scaleRatio = this.getScaleRatio(format);
-    const cardsPerPage = 10;
+    const cardsPerPage = 8;
     const chunks = chunk(cards, cardsPerPage);
 
     return (
       <Box css={{ zoom: 1 * scaleRatio }}>
         {chunks.map((paginatedCards, idx) => (
-          <Box key={idx} py={5} css={this.getPageStyle(cardsPerPage, paginatedCards)}>
+          <Box key={idx} py={3} css={this.getPageStyle(cardsPerPage, paginatedCards)}>
             <Flex flexWrap="wrap" justifyContent="center">
               {paginatedCards.map(c => (
-                <Box key={c.uuid} css={{ width: '3.5in', height: '2in' }}>
+                <Box key={c.uuid}>
                   <PrintableGiftCard
                     amount={c.initialBalance}
                     currency={c.currency}
