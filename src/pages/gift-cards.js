@@ -4,6 +4,7 @@ import { Flex, Box } from '@rebass/grid';
 import { chunk } from 'lodash';
 
 import PrintableGiftCard from '../components/PrintableGiftCard';
+import { OPENSOURCE_COLLECTIVE_ID } from '../constants/collectives';
 
 export default class Home extends Component {
   static propTypes = {
@@ -57,6 +58,7 @@ export default class Home extends Component {
                     currency={c.currency}
                     code={c.uuid.split('-')[0]}
                     expiryDate={c.expiryDate}
+                    isLimitedToOpenSource={(c.limitedToHostCollectiveIds || []).includes(OPENSOURCE_COLLECTIVE_ID)}
                   />
                 </Box>
               ))}

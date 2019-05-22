@@ -10,6 +10,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -22,6 +23,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -34,6 +36,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -46,6 +49,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -58,6 +62,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -70,6 +75,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -82,6 +88,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -94,6 +101,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -106,6 +114,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -118,6 +127,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -130,6 +140,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -142,6 +153,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -154,6 +166,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -166,6 +179,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -178,6 +192,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     },
     {
@@ -190,6 +205,7 @@
       "expiryDate": "Fri May 15 2020 00:00:00 GMT+0200 (GMT+02:00)",
       "currency": "EUR",
       "data": null,
+      "limitedToHostCollectiveIds": [11004],
       "__typename": "PaymentMethodType"
     }
   ]

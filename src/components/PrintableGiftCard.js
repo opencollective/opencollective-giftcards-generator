@@ -47,7 +47,16 @@ const OpenCollectiveLogo = styled.img`
  * A static gift card meant to be printed to be offered to someone. It has standard
  * business card resolution (3.5in x 2in) but is rendered two time bigger for HDPI.
  */
-const PrintableGiftCard = ({ amount, currency, code, expiryDate, tagline, withQRCode, ...styleProps }) => {
+const PrintableGiftCard = ({
+  amount,
+  currency,
+  code,
+  expiryDate,
+  tagline,
+  withQRCode,
+  isLimitedToOpenSource,
+  ...styleProps
+}) => {
   const redeemUrl = `${WEBSITE_URL}/redeem/${code}`;
   const basePaddingX = '0.8em';
   const paddingTop = '1em';
@@ -86,6 +95,12 @@ const PrintableGiftCard = ({ amount, currency, code, expiryDate, tagline, withQR
         <Box>
           <StyledHr mt="0.75em" mb="0.5em" borderColor="rgb(73, 139, 237)" borderRadius={8} />
           <P fontSize="0.55em" lineHeight="1.75em" color="black.300">
+            {isLimitedToOpenSource && (
+              <span>
+                Limited to collectives hosted by the Open Source Collective 501c6 (Non Profit).
+                <br />
+              </span>
+            )}
             {expiryDate && (
               <FormattedMessage
                 id="ContributePayment.expiresOn"
@@ -163,6 +178,8 @@ PrintableGiftCard.propTypes = {
   tagline: PropTypes.node,
   /** Main font size */
   fontSize: PropTypes.string,
+  /** If true, a messagewill indicate that the gift card is limited to opensource host */
+  isLimitedToOpenSource: PropTypes.bool,
 };
 
 PrintableGiftCard.defaultProps = {
