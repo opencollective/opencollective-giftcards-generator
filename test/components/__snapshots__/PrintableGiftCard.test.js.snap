@@ -1,32 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-.c10 {
-  box-sizing: border-box;
-}
-
-.c22 {
-  box-sizing: border-box;
-  margin-left: 0.25em;
-}
-
 .c1 {
   box-sizing: border-box;
   padding-top: 1em;
   padding-left: 0.8em;
   padding-right: 0.8em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+}
+
+.c9 {
+  box-sizing: border-box;
+}
+
+.c23 {
+  box-sizing: border-box;
+  margin-left: 0.25em;
 }
 
 .c2 {
@@ -39,9 +27,25 @@ exports[`renders correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.c4 {
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
   box-sizing: border-box;
   margin-left: 0.8em;
   display: -webkit-box;
@@ -53,9 +57,9 @@ exports[`renders correctly 1`] = `
   flex-direction: column;
 }
 
-.c8 {
+.c12 {
   box-sizing: border-box;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.6em;
   -webkit-flex: 1 1;
   -ms-flex: 1 1;
   flex: 1 1;
@@ -63,14 +67,19 @@ exports[`renders correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-.c9 {
+.c13 {
   box-sizing: border-box;
+  margin-bottom: 0.25em;
   margin-left: 0.8em;
   display: -webkit-box;
   display: -webkit-flex;
@@ -85,28 +94,9 @@ exports[`renders correctly 1`] = `
   justify-content: space-between;
 }
 
-.c17 {
-  box-sizing: border-box;
-  padding-right: 0.8em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 .c18 {
   box-sizing: border-box;
+  padding-right: 0.8em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -126,21 +116,40 @@ exports[`renders correctly 1`] = `
 
 .c19 {
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c20 {
+  box-sizing: border-box;
   margin-top: 1em;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.4em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c14 {
+.c15 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   background: #69a0f1;
   border-radius: 1em;
@@ -152,17 +161,17 @@ exports[`renders correctly 1`] = `
   padding: 0.25em 1em;
 }
 
-.c11 {
+.c10 {
   border: 0;
   border-top: 1px solid;
   margin: 0;
   height: 1px;
   margin-top: 0.75em;
   margin-bottom: 0.5em;
-  border-color: rgb(62,129,230);
+  border-color: rgb(73,139,237);
 }
 
-.c5 {
+.c6 {
   font-size: 1.1em;
   font-weight: bold;
   line-height: 1.5em;
@@ -173,7 +182,7 @@ exports[`renders correctly 1`] = `
   margin: 0;
 }
 
-.c6 {
+.c7 {
   color: white.transparent.72;
   font-size: 0.7em;
   line-height: 0.8em;
@@ -184,7 +193,7 @@ exports[`renders correctly 1`] = `
   margin: 0;
 }
 
-.c12 {
+.c11 {
   color: black.300;
   font-size: 0.55em;
   line-height: 1.75em;
@@ -195,8 +204,8 @@ exports[`renders correctly 1`] = `
   margin: 0;
 }
 
-.c13 {
-  font-size: 0.8em;
+.c14 {
+  font-size: 0.75em;
   line-height: Paragraph;
   -webkit-letter-spacing: -0.2px;
   -moz-letter-spacing: -0.2px;
@@ -205,7 +214,7 @@ exports[`renders correctly 1`] = `
   margin: 0;
 }
 
-.c15 {
+.c16 {
   color: black.500;
   font-size: inherit;
   line-height: inherit;
@@ -217,7 +226,7 @@ exports[`renders correctly 1`] = `
   margin-left: 4px;
 }
 
-.c16 {
+.c17 {
   color: black.800;
   font-size: inherit;
   font-weight: bold;
@@ -229,9 +238,9 @@ exports[`renders correctly 1`] = `
   margin: 0;
 }
 
-.c20 {
+.c21 {
   color: #313233;
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: bold;
   line-height: 1em;
   -webkit-letter-spacing: -0.2px;
@@ -241,7 +250,7 @@ exports[`renders correctly 1`] = `
   margin: 0;
 }
 
-.c21 {
+.c22 {
   font-size: inherit;
   line-height: inherit;
   -webkit-letter-spacing: -0.2px;
@@ -251,9 +260,9 @@ exports[`renders correctly 1`] = `
   margin: 0;
 }
 
-.c23 {
+.c24 {
   color: black.700;
-  font-size: 0.9em;
+  font-size: 0.7em;
   line-height: inherit;
   -webkit-letter-spacing: -0.2px;
   -moz-letter-spacing: -0.2px;
@@ -266,14 +275,13 @@ exports[`renders correctly 1`] = `
   box-sizing: border-box;
   font-size: 0.14in;
   font-family: Helvetica,sans-serif;
-  width: 3.5in;
-  height: 2in;
+  width: 85.60mm;
+  height: 53.98mm;
   position: relative;
   overflow: hidden;
   background-image: url('http://localhost:3004/static/images/oc-gift-card-front-straightened.png');
   background-size: 100%;
   background-repeat: no-repeat;
-  border: 1px solid lightgrey;
   color: white;
   display: -webkit-box;
   display: -webkit-flex;
@@ -286,11 +294,13 @@ exports[`renders correctly 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  outline: 0.1em dashed rgba(62,130,230,0.15);
+  margin: 2em;
   border-radius: 0px;
   font-size: 0.14in;
 }
 
-.c3 {
+.c4 {
   width: 3em;
   height: 3em;
 }
@@ -317,64 +327,68 @@ exports[`renders correctly 1`] = `
     <div
       className="c2"
     >
-      <img
-        alt=""
-        className="c3"
-        src="http://localhost:3004/static/images/opencollective-icon.svg"
-      />
       <div
-        className="c4"
+        className="c3"
       >
-        <p
+        <img
+          alt=""
+          className="c4"
+          src="http://localhost:3004/static/images/opencollective-icon.svg"
+        />
+        <div
           className="c5"
         >
-          Open Collective
-        </p>
-        <p
-          className="c6"
-        >
-          I have no QR code!
-        </p>
+          <p
+            className="c6"
+          >
+            Open Collective
+          </p>
+          <p
+            className="c7"
+          >
+            I have no QR code!
+          </p>
+        </div>
+      </div>
+      <div
+        className="c8"
+        padding="0.25em 1em"
+      >
+        <span>
+          Gift card
+        </span>
       </div>
     </div>
-    <div
-      className="c7"
-      padding="0.25em 1em"
-    >
-      <span>
-        Gift card
-      </span>
-    </div>
-  </div>
-  <div
-    className="c8"
-  >
     <div
       className="c9"
     >
-      <div
+      <hr
         className="c10"
-      >
-        <hr
-          className="c11"
-        />
-        <p
-          className="c12"
-        >
-          <span>
-            Expires on 
-            <span>
-              May 12, 2020
-            </span>
-          </span>
-        </p>
-      </div>
+      />
       <p
-        className="c13"
+        className="c11"
+      >
+        <span>
+          Expires on 
+          <span>
+            May 12, 2020
+          </span>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div
+    className="c12"
+  >
+    <div
+      className="c13"
+    >
+      <p
+        className="c14"
       >
         <svg
           aria-hidden="true"
-          className="c14"
+          className="c15"
           color="black"
           fill="none"
           focusable="false"
@@ -399,40 +413,40 @@ exports[`renders correctly 1`] = `
           />
         </svg>
         <span
-          className="-Clean-span c15"
+          className="-Clean-span c16"
         >
           opencollective.com/redeem/
         </span>
         <span
-          className="-Clean-span c16"
+          className="-Clean-span c17"
         >
           8X4WWD2G
         </span>
       </p>
     </div>
     <div
-      className="c17"
+      className="c18"
     >
       <div
-        className="c18"
+        className="c19"
       >
         <div
-          className="c19"
+          className="c20"
         >
           <span
-            className="-Clean-span c20"
+            className="-Clean-span c21"
           >
             <span
-              className="-Clean-span c21"
+              className="-Clean-span c22"
             >
               $500
             </span>
           </span>
           <div
-            className="c22"
+            className="c23"
           >
             <span
-              className="currency -Clean-span c23"
+              className="currency -Clean-span c24"
             >
               USD
             </span>
