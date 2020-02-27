@@ -87,7 +87,7 @@
     "jest-styled-components": "^6.3.1",
     "nodemon": "^1.19.3",
     "prettier": "^1.16.4",
-    "react-test-renderer": "^16.8.6",
+    "react-test-renderer": "^16.13.0",
     "url-loader": "^1.1.2"
   },
   "config": {
