@@ -1,3 +1,7 @@
+# FEATURE MOVED TO https://github.com/opencollective/opencollective-pdf
+
+---
+
 # Open Collective - Gift Cards Generator
 
 [![Circle CI](https://circleci.com/gh/opencollective/opencollective-giftcards-generator/tree/master.svg?style=shield)](https://circleci.com/gh/opencollective/opencollective-giftcards-generator/tree/master)
