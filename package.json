@@ -31,7 +31,7 @@
     "prop-types": "~15.7.2",
     "qrcode.react": "0.9.3",
     "react": "~16.10.2",
-    "react-dom": "~16.8.6",
+    "react-dom": "~16.13.0",
     "react-intl": "~2.8.0",
     "react-styleguidist": "9.0.4",
     "rebass": "~3.0.1",
